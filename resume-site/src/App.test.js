@@ -1,8 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders name', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
+  // Think of this as GetElementByInnerText the i makes it case Insensitive
+  const linkElement = screen.getByText(/Jeffrey Ongley/i);
   expect(linkElement).toBeInTheDocument();
 });
