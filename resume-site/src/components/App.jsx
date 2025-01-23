@@ -1,6 +1,6 @@
-import logo from '../logo.svg';
+import logo from '../media/logo.svg';
 import '../css/App.css';
-import { BrowserRouter, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Button = ({ children, onClick }) => {
   return (
@@ -16,19 +16,20 @@ function App() {
 
   return (
     <div className="App">
-      {/* <header className="App-header">
-        
-      </header> */}
-      <div className="App-body" >
+      {/* <div className="App-body" > */}
         <div className="name">Jeffrey Ongley</div>
         <div className="title">Software Engineer</div>
         <div className="picture"><img src={logo} className='App-logo' alt="portrait"></img></div>
         <div className="menu">
           <Button onClick={() =>navigate('/workExperience')}>Work Experience</Button>
           <Button onClick={() =>navigate('/Education')}>Education</Button>
-          <Button onClick={() =>navigate('/langAndTech')}>Languages and Technologies</Button>
         </div>
-      </div>
+        <div className="menu">
+          <Button onClick={() =>navigate('/langAndTech')}>Languages and Technologies</Button>
+          <Button onClick={() =>navigate('/langAndTech')}>Languages and Technologies</Button>
+
+        </div>
+      {/* </div> */}
     </div>
   );
 }
