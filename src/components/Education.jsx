@@ -11,7 +11,7 @@ const Button = ({ children, onClick }) => {
     </button>
     );
 };
-// testing github config
+// testing github config again
 function Education() {
 
     const navigate = useNavigate();
